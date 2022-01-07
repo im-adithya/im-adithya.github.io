@@ -1,38 +1,630 @@
-.App {
-  text-align: center;
+.about-bg {
+  max-width: 90vw;
+  background-image: url("./assets/aboutcardmob-bg.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  border-radius: 10px;
+  border: 2px solid #cbcbcb;
+  box-shadow: 0px 0px 10px #a7a7a7;
+  margin: 100px 0 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-filler {
+  height: 270px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-text {
+  font-family: 'Metropolis';
+  font-size: 1rem;
+  color: #4d4d4d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.about-text-header {
+  font-family: 'MetropolisBold';
+  font-size: 1.5rem;
+  color: #4d4d4d;
+}
+
+.active-title-1 {
+  border-bottom: 2px solid rgb(0, 132, 255);
+}
+
+.active-title-2 {
+  border-bottom: 2px solid rgb(212, 0, 255);
+}
+
+.button-1 {
+  background-color: #009738 !important;
+}
+
+.button-2 {
+  background-color: transparent !important;
+}
+
+.button-resume {
+  border-width: 3px !important;
+}
+
+.contact-bg {
+  max-width: 90vw;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 10px;
+  background-color: #040d21;
+  border: 2px solid #006a68;
+  box-shadow: 0px 0px 30px #28b6b6;
+  margin: 100px 0 !important;
+}
+
+.contact-text-header {
+  font-family: 'MetropolisBold';
+  font-size: 1.75rem;
+}
+
+.contact-text-2 {
+  font-family: 'MetropolisBold';
+  font-size: 1rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-text-3 {
+  font-family: 'MetropolisBold';
+  font-size: 1rem;
+  border: 4px solid #ffae78;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-text-4 {
+  font-family: 'MetropolisBold';
+  font-size: 1rem;
+  color: #23394f;
+}
+
+.flex-text-1 {
+  font-family: 'MetropolisBold';
+  font-size: 2.5rem;
+}
+
+.flex-text-2 {
+  color: #999999;
+  font-family: 'MetropolisBold';
+  font-size: 1.25rem;
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.footer {
+  background-color: #040d21;
+}
+
+.footer-sign {
+  width: 150px;
+}
+
+.footer-text-1 {
+  font-family: 'Metropolis';
+  font-size: 0.75rem;
+  color: white;
+}
+
+.hero {
+  background-image: url("./assets/stars.svg");
+}
+
+.hero-container {
+  min-height: 650px;
+  max-height: 926px;
+  background-image: url("./assets/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.hero-image {
+  width: 80%;
+  transition: 2s;
+}
+
+.hero-text-1 {
+  font-family: 'MetropolisBold';
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.hero-text-2 {
+  font-family: 'MetropolisBold';
+  font-size: 2rem;
+}
+
+.hero-text-3 {
+  font-family: 'MetropolisSemi';
+  font-size: 1rem;
+  color: #ce6f8d;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #ffae78;
+}
+
+.navibar {
+  padding-top: 25px;
+}
+
+.projects {
+  background-color: #040d21;
+  border-radius: 20px;
+}
+
+.project-1 {
+  background: linear-gradient(to right, #f5455c, #f55469, #f597a5);
+}
+
+.project-1-span {
+  color: #92728b;
+}
+
+.project-1-btn {
+  color: #f5455c !important;
+  border: 2px solid #f5455c !important;
+}
+
+.project-2 {
+  background: linear-gradient(to right, #f74700, #e0ae6f, #f4f0e1);
+}
+
+.project-2-span {
+  color: #cc9c8f;
+}
+
+.project-2-btn {
+  color: #f77700 !important;
+  border: 2px solid #f77700 !important;
+}
+
+.project-3 {
+  background: linear-gradient(to right, #29ab4f, #90ffd4);
+}
+
+.project-3-span {
+  color: #719b6d;
+}
+
+.project-3-btn {
+  color: #88e86d !important;
+  border: 2px solid #88e86d !important;
+}
+
+.project-4 {
+  background: linear-gradient(to right, #f5455c, #f55469, #f597a5);
+}
+
+.project-4-span {
+  color: #92728b;
+}
+
+.project-4-btn {
+  color: #f5455c !important;
+  border: 2px solid #f5455c !important;
+}
+
+.project-5 {
+  background: linear-gradient(to right, #24adff, #7b71ff);
+}
+
+.project-5-span {
+  color: #40728f;
+}
+
+.project-5-btn {
+  color: #24adff !important;
+  border: 2px solid #24adff !important;
+}
+
+.project-6 {
+  background: linear-gradient(to right, #4d4d4d, #cccccc);
+}
+
+.project-6-span {
+  color: #666666;
+}
+
+.project-6-btn {
+  color: #cccccc !important;
+  border: 2px solid #cccccc !important;
+}
+
+.project-text-1 {
+  font-family: 'MetropolisBold';
+  font-size: 1.5rem;
+}
+
+.project-text-2 {
+  font-family: 'MetropolisBold';
+  font-size: 2rem;
+}
+
+.project-text-3 {
+  font-family: 'MetropolisSemi';
+  font-size: 1rem;
+}
+
+.project-text-4 {
+  font-family: 'MetropolisSemi';
+  font-size: 1rem;
+}
+
+.project-text-5 {
+  font-family: 'MetropolisSemi';
+  font-size: 1rem;
+  color: white;
+}
+
+.project-text-6 {
+  font-family: 'MetropolisBold';
+  font-size: 2.15rem;
+  margin-bottom: 10px !important;
+}
+
+.project-text-7 {
+  font-family: 'MetropolisBold';
+  font-size: 1rem;
+  color: white;
+}
+
+.project-text-7>p {
+  margin-bottom: 6px !important;
+}
+
+.project-titles {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.project-titles::-webkit-scrollbar {
+  display: none;
+}
+
+.project-titles>div {
+  font-family: 'Source Code Pro';
+  font-size: 0.8rem;
+  color: white;
+  margin: 0 10px;
+  padding: 0 10px 5px 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.text-animation-1 {
+  background: linear-gradient(to right, #9df3d1, #81d0e8, #71bcf5);
+}
+
+.text-animation-2 {
+  background: linear-gradient(to right, #c54eaa, #ab57b8, #8166cd, #457bec);
+}
+
+.text-animation-3 {
+  background: linear-gradient(to right, #ff7e72, #ffae78, #ffd37d);
+}
+
+.text-animation-1, .text-animation-2, .text-animation-3, .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: text-animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+.transition>* {
+  transition: 2s;
+}
+
+.trophy-flex-box {
+  align-items: flex-end;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.trophy-flex-box>img {
+  display: block;
+  width: 120px;
+  padding: 10px;
+}
+
+.xp-text-1 {
+  font-family: 'MetropolisBold';
+  font-size: 2rem;
+}
+
+.xp-text-2 {
+  font-family: 'MetropolisBold';
+  color: white;
+  font-size: 1.25rem;
+}
+
+.xp-text-3 {
+  font-family: 'Source Code Pro';
+  font-weight: 700;
+  color: #b3b3b3;
+  font-size: 0.75rem;
+}
+
+.xp-text-4 {
+  font-family: 'Source Code Pro';
+  color: white;
+  font-size: 0.75rem;
+}
+
+.xp-text-4>p {
+  margin-bottom: 10px;
+}
+
+.xp-box {
+  border-left: 4px solid #b3b3b3;
+  margin-left: 22px;
+  padding-left: 35px;
+  padding-bottom: 30px;
+}
+
+.chevron-holder {
+  top: 80%;
+}
+
+.chevron {
+  position: absolute;
+  width: 25px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translatey(-20px) rotate(5deg);
+  }
+
+  100% {
+    transform: translatey(0px) rotate(0deg);
+  }
+}
+
+@keyframes text-animation {
+  0%, 100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+@media (min-width:576px) {
+  .about-bg {
+    background-image: none;
+  }
+
+  .hero-container {
+    min-height: 650px;
+  }
+}
+
+@media (min-width:768px) {
+  .about-text {
+    font-size: 1.15rem;
+  }
+
+  .about-text-header {
+    font-size: 1.75rem;
+  }
+
+  .contact-bg {
+    max-width: 90vw;
+    background-image: url("./assets/location.png");
+  }
+
+  .contact-text-header {
+    font-size: 2.25rem;
+  }
+
+  .contact-text-2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-text-3 {
+    font-size: 1rem;
+  }
+
+  .contact-text-4 {
+    font-size: 1.25rem;
+  }
+
+  .flex-text-1 {
+    font-size: 3.5rem;
+  }
+
+  .flex-text-2 {
+    font-size: 1.75rem;
+  }
+
+  .footer-text-1 {
+    font-size: 1rem;
+  }
+
+  .hero-container {
+    height: 94vh;
+    min-height: 700px;
+  }
+
+  .hero-image {
+    width: 50%;
+  }
+
+  .hero-text-1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-text-2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text-3 {
+    font-size: 1.5rem;
+  }
+
+  .projects {
+    border-radius: 30px;
+  }
+
+  .project-text-1 {
+    font-size: 1.75rem;
+  }
+
+  .project-text-2 {
+    font-size: 2.15rem;
+  }
+
+  .project-text-3 {
+    font-size: 1.25rem;
+  }
+
+  .project-text-7 {
+    font-size: 1.25rem;
+  }
+
+  .trophy-flex-box>img {
+    width: 180px;
+    padding: 20px;
+  }
+
+  .xp-box {
+    padding-left: 35px;
+  }
+
+  .xp-text-1 {
+    font-size: 3rem;
+  }
+
+  .xp-text-2 {
+    font-size: 1.5rem;
+  }
+
+  .xp-text-3 {
+    font-size: 1rem;
+  }
+
+  .xp-text-4 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:992px) {
+  .about-bg {
+    max-width: 70vw;
+    background-image: url("./assets/aboutcard-bg.png");
+    background-size: auto 102%;
+    background-position: right;
+  }
+
+  .contact-bg {
+    max-width: 60vw;
+  }
+
+  .footer-sign {
+    width: 200px;
+  }
+
+  .hero-image {
+    width: 80%;
+  }
+
+  .hero-text-1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-text-2 {
+    font-size: 2.75rem;
+  }
+
+  .hero-text-3 {
+    font-size: 1.75rem;
+  }
+
+  .hero-container {
+    height: 94vh;
+    min-height: 700px;
+  }
+
+  .projects {
+    border-radius: 50px;
+  }
+
+  .project-text-7 {
+    font-family: 'MetropolisBold';
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .project-text-7>p {
+    margin-bottom: 6px !important;
   }
 }
