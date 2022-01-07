@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { useRef, useState } from "react";
 
 import './App.css';
@@ -27,6 +28,25 @@ import zuliptrophy from "./assets/zulip-trophy.png";
 import gitcointrophy from "./assets/gitcoin-trophy.png";
 import adtrophy from "./assets/ad-trophy.png";
 import github from "./assets/github.svg";
+
+import firebase from "firebase/app";
+import "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_API_KEY,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
+};
+
+function initFirebase() {
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+}
+
+initFirebase();
+firebase.analytics();
 
 const projectInfo = [
   {
