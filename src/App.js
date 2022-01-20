@@ -100,7 +100,7 @@ const projectInfo = [
   },
   {
     title: "Zulip Mobile",
-    stack: "React & Firebase",
+    stack: "React-Native",
     description1: "Zulip is a powerful, open source group chat application that combines the immediacy of real-time chat with the productivity benefits of threaded conversations.",
     description2: "It is used by open source projects, Fortune 500 companies, large standards bodies, and others who need a real-time chat system that allows users to easily process hundreds or thousands of messages a day.",
     link: "https://github.com/search?q=type%3Apr+author%3Aim-adithya+repo%3Azulip%2Fzulip-mobile+repo%3Azulip%2Fzulip"
